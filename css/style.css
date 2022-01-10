@@ -328,6 +328,12 @@ body.lock {
 .portfolio__buttons {
   margin-bottom: 50px;
 }
+.filterDiv {
+  display: none;
+}
+.show {
+  display: block;
+}
 .portfolio {
   background: #f2f1ee;
   height: 770px;
@@ -341,6 +347,8 @@ body.lock {
   color: #f89310;
   text-decoration: none;
   cursor: pointer;
+}
+.portfolio__btn.active {
   border-bottom: 2px solid #f89310;
 }
 .portfolio__btn:hover {
@@ -528,6 +536,8 @@ body.lock {
   color: #eee;
 }
 
+@media (max-width: 1024px) {
+}
 @media (max-width: 998px) {
   .header__logo {
     margin-right: 110px;
@@ -586,13 +596,12 @@ body.lock {
   .contacts__list {
     width: 100%;
   }
-}
-@media (max-width: 768px) {
   .header__nav {
     display: inline-flex;
   }
   .header__title {
     margin-top: 250px;
+    margin-left: 50px;
   }
   .header__bigtitle {
     margin-top: 100px;
@@ -605,7 +614,7 @@ body.lock {
     margin-top: 25px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   .header__nav {
     margin-top: -80px;
   }
@@ -614,7 +623,7 @@ body.lock {
   }
   .header__title {
     text-align: center;
-    margin-left: -70px;
+    margin-left: -15px;
   }
   .header__bigtitle {
     font-size: 25px;
@@ -687,6 +696,183 @@ body.lock {
     margin-top: 35px;
     font-size: 12px;
     text-align: center;
+  }
+  .menu__list-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .header__nav {
+    margin-top: -80px;
+  }
+  .header__logo {
+    margin-right: -60px;
+  }
+  .header__title {
+    text-align: center;
+    margin-left: -15px;
+  }
+  .header__bigtitle {
+    font-size: 25px;
+  }
+  .header__text {
+    font-size: 14px;
+  }
+  .about__title {
+    font-size: 25px;
+  }
+  .about__info-title {
+    font-size: 18px;
+  }
+  .about__info-text {
+    font-size: 10px;
+  }
+  .about__info-list {
+    height: 240px;
+  }
+  .about__title-skill {
+    margin-top: 30px;
+  }
+  .about__skill-item {
+    height: 270px;
+  }
+  .portfolio__buttons {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .portfolio__btn {
+    margin-bottom: 20px;
+  }
+  .portfolio__items {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .contacts__text {
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+  .contacts__item {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .contacts__info-form {
+    margin-right: 10px;
+  }
+  .contacts__form-title {
+    font-size: 14px;
+  }
+  .contacts__form-input--title {
+    font-size: 12px;
+  }
+  .contacts__form-input,
+  .contacts__form-area,
+  .contacts__form-btn {
+    width: 100%;
+  }
+  .contacts__form-input,
+  .contacts__form-area {
+    font-size: 12px;
+  }
+  .contacts__form-input::placeholder,
+  .contacts__form-area::placeholder {
+    font-size: 12px;
+  }
+  .footer__text {
+    margin-top: 35px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .menu__list-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .header__nav {
+    margin-top: -80px;
+  }
+  .header__logo {
+    margin-right: -60px;
+  }
+  .header__title {
+    text-align: center;
+    margin-left: -60px;
+  }
+  .header__bigtitle {
+    font-size: 25px;
+  }
+  .header__text {
+    font-size: 14px;
+  }
+  .about__title {
+    font-size: 25px;
+  }
+  .about__info-title {
+    font-size: 18px;
+  }
+  .about__info-text {
+    font-size: 10px;
+  }
+  .about__info-list {
+    height: 240px;
+  }
+  .about__title-skill {
+    margin-top: 30px;
+  }
+  .about__skill-item {
+    height: 270px;
+  }
+  .portfolio__buttons {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .portfolio__btn {
+    margin-bottom: 20px;
+  }
+  .portfolio__items {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .contacts__text {
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+  .contacts__item {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .contacts__info-form {
+    margin-right: 10px;
+  }
+  .contacts__form-title {
+    font-size: 14px;
+  }
+  .contacts__form-input--title {
+    font-size: 12px;
+  }
+  .contacts__form-input,
+  .contacts__form-area,
+  .contacts__form-btn {
+    width: 100%;
+  }
+  .contacts__form-input,
+  .contacts__form-area {
+    font-size: 12px;
+  }
+  .contacts__form-input::placeholder,
+  .contacts__form-area::placeholder {
+    font-size: 12px;
+  }
+  .footer__text {
+    margin-top: 35px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .menu {
+    padding-top: 140px;
   }
   .menu__list-link {
     font-size: 16px;
