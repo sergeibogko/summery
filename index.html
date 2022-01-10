@@ -125,14 +125,14 @@
           <div class="container">
               <div class="portfolio__inner">
                   <h2 class="about__title">Портфолио</h2>
-                  <div class="portfolio__buttons">
-                      <button class="portfolio__btn">ВСЕ РАБОТЫ</button>
-                      <button class="portfolio__btn">"ПОД КЛЮЧ"</button>
-                      <button class="portfolio__btn">ВЕРСТКА</button>
-                      <button class="portfolio__btn">ПРОЧЕЕ</button>
-                  </div>
+                  <!-- <div class="portfolio__buttons">
+                      <button class="portfolio__btn" data-filter="all">ВСЕ РАБОТЫ</button>
+                      <button class="portfolio__btn" data-filter=".category-1">"ПОД КЛЮЧ"</button>
+                      <button class="portfolio__btn" data-filter=".category-2">ВЕРСТКА</button>
+                      <button class="portfolio__btn" data-filter=".category-3">ПРОЧЕЕ</button>
+                  </div> -->
                   <div class="portfolio__gallery">
-                      <div class="portfolio__items"> 
+                      <div class="portfolio__items mix category-1"> 
                           <img class="portfolio__img" src="img/desire.jpg" alt="images" >
                           <div class="portfolio__info">
                               <h4 class="portfolio__info-title">Desire</h4>
@@ -142,7 +142,7 @@
                           </a>
                           </div>
                       </div>
-                      <div class="portfolio__items">              
+                      <div class="portfolio__items mix category-2">              
                           <img class="portfolio__img" src="img/RayalPark.jpg" alt="images" >
                           <div class="portfolio__info">
                               <h4 class="portfolio__info-title">Rayal-Park</h4>
@@ -152,7 +152,7 @@
                           </a>
                           </div>
                       </div>
-                      <div class="portfolio__items">               
+                      <div class="portfolio__items mix category-2">               
                           <img class="portfolio__img" src="img/solar.jpg" alt="images" >
                           <div class="portfolio__info">
                               <h4 class="portfolio__info-title">Solar</h4>
@@ -162,7 +162,7 @@
                           </a>
                           </div>
                       </div>
-                      <div class="portfolio__items">                 
+                      <div class="portfolio__items mix category-3">                 
                           <img class="portfolio__img" src="img/porten.jpg" alt="images" >
                           <div class="portfolio__info">
                               <h4 class="portfolio__info-title">Porten</h4>
@@ -172,7 +172,7 @@
                           </a>
                           </div>
                       </div>
-                      <div class="portfolio__items">    
+                      <div class="portfolio__items mix category-1">    
                           <img class="portfolio__img" src="img/WebStudio.jpg" alt="images" >
                           <div class="portfolio__info">
                               <h4 class="portfolio__info-title">WebStudio</h4>
@@ -182,7 +182,7 @@
                           </a>
                           </div>
                       </div>
-                       <div class="portfolio__items">    
+                       <div class="portfolio__items mix category-2">    
                           <img class="portfolio__img" src="img/space-tourism.jpg" alt="images" >
                           <div class="portfolio__info">
                               <h4 class="portfolio__info-title">Космический Туризм</h4>
@@ -255,6 +255,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

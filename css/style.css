@@ -85,6 +85,8 @@ ul {
   list-style: none;
 }
 .container {
+  max-width: 1250px;
+  height: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -95,7 +97,7 @@ ul {
   min-height: 521px;
   background-image: url(../img/header-bg2.jpg);
   background-position: top center;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .header__inner {
@@ -123,7 +125,7 @@ body.lock {
 .header__logo {
   position: relative;
   z-index: 3;
-  margin-right: 20%;
+  margin-right: 215px;
 }
 .menu {
   position: fixed;
@@ -134,7 +136,7 @@ body.lock {
   background-color: transparent;
   padding-top: 200px;
   z-index: 2;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .menu__list {
   padding: 0;
@@ -158,6 +160,7 @@ body.lock {
 .menu.active {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease 0s;
 }
 .header__btn {
   position: fixed;
@@ -172,11 +175,6 @@ body.lock {
   right: 0;
   padding: 10px 10px 10px 10px;
 }
-/* .header__btn:hover {
-  border: 1px solid #fff;
-
-  background-color: #f8b410;
-} */
 .header__btn::before,
 .header__btn::after {
   content: "";
@@ -422,6 +420,7 @@ body.lock {
 .contacts__list {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .contacts__list {
   width: 50%;
@@ -500,7 +499,7 @@ body.lock {
   resize: none;
 }
 .contacts__form-btn {
-  width: 30%;
+  width: 50%;
   background: #f8b410;
   color: #fff;
   border: none;
@@ -527,4 +526,169 @@ body.lock {
   font-size: 14px;
   line-height: 1.42857143;
   color: #eee;
+}
+
+@media (max-width: 998px) {
+  .header__logo {
+    margin-right: 110px;
+  }
+  .header__logo img {
+    margin-left: 15px;
+  }
+  .about__info-list {
+    width: 260px;
+  }
+  .about__about {
+    margin-bottom: 100px;
+  }
+  .about__skill-item {
+    width: 215px;
+  }
+  .contacts__info {
+    flex-wrap: wrap;
+  }
+  .contacts__list {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .header__logo {
+    margin-right: 50px;
+  }
+  .header__logo img {
+    width: 150px;
+  }
+  .header__btn {
+    margin-right: 10px;
+  }
+  .about__info-my {
+    flex-wrap: wrap;
+  }
+  .about__info-list {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about__about {
+    margin-bottom: 0;
+  }
+  .about__skill-list {
+    flex-wrap: wrap;
+  }
+  .about__skill-item {
+    width: 250px;
+  }
+  .portfolio {
+    height: 100%;
+  }
+  .portfolio__gallery {
+    margin-bottom: 80px;
+  }
+  .contacts__list {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: inline-flex;
+  }
+  .header__title {
+    margin-top: 250px;
+  }
+  .header__bigtitle {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .header__logo img {
+    width: 125px;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .header__nav {
+    margin-top: -80px;
+  }
+  .header__logo {
+    margin-right: -60px;
+  }
+  .header__title {
+    text-align: center;
+    margin-left: -70px;
+  }
+  .header__bigtitle {
+    font-size: 25px;
+  }
+  .header__text {
+    font-size: 14px;
+  }
+  .about__title {
+    font-size: 25px;
+  }
+  .about__info-title {
+    font-size: 18px;
+  }
+  .about__info-text {
+    font-size: 10px;
+  }
+  .about__info-list {
+    height: 240px;
+  }
+  .about__title-skill {
+    margin-top: 30px;
+  }
+  .about__skill-item {
+    height: 270px;
+  }
+  .portfolio__buttons {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .portfolio__btn {
+    margin-bottom: 20px;
+  }
+  .portfolio__items {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .contacts__text {
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+  .contacts__item {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .contacts__info-form {
+    margin-right: 10px;
+  }
+  .contacts__form-title {
+    font-size: 14px;
+  }
+  .contacts__form-input--title {
+    font-size: 12px;
+  }
+  .contacts__form-input,
+  .contacts__form-area,
+  .contacts__form-btn {
+    width: 100%;
+  }
+  .contacts__form-input,
+  .contacts__form-area {
+    font-size: 12px;
+  }
+  .contacts__form-input::placeholder,
+  .contacts__form-area::placeholder {
+    font-size: 12px;
+  }
+  .footer__text {
+    margin-top: 35px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .menu__list-link {
+    font-size: 16px;
+  }
 }
