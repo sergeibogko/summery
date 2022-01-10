@@ -89,8 +89,7 @@ ul {
   height: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .header {
@@ -537,6 +536,27 @@ body.lock {
 }
 
 @media (max-width: 1024px) {
+  .header__logo {
+    margin-right: 100px;
+  }
+  .about__info-list {
+    width: 280px;
+  }
+  .about__info {
+    margin-bottom: 50px;
+  }
+  .about__skill-item {
+    width: 245px;
+  }
+  .contacts__info {
+    flex-wrap: wrap;
+  }
+  .contacts__list {
+    width: 80%;
+  }
+  .contacts__info-form {
+    margin-right: 0;
+  }
 }
 @media (max-width: 998px) {
   .header__logo {
