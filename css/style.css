@@ -478,12 +478,12 @@ body.lock {
   margin-top: 55px;
   margin-bottom: 10px;
 }
-.contacts__form-input--title {
+.contacts__form-labele {
   font-size: 14px;
   line-height: 1.1;
   margin-top: 10px;
 }
-.contacts__form-input--title::placeholder {
+.contacts__form-label::placeholder {
   font-size: 14px;
   line-height: 1.1;
   color: inherit;
@@ -696,7 +696,7 @@ body.lock {
   .contacts__form-title {
     font-size: 14px;
   }
-  .contacts__form-input--title {
+  .contacts__form-labele {
     font-size: 12px;
   }
   .contacts__form-input,
@@ -712,6 +712,10 @@ body.lock {
   .contacts__form-area::placeholder {
     font-size: 12px;
   }
+  .contacts__form-input.error {
+    border-color: red;
+  }
+
   .footer__text {
     margin-top: 35px;
     font-size: 12px;
@@ -783,7 +787,7 @@ body.lock {
   .contacts__form-title {
     font-size: 14px;
   }
-  .contacts__form-input--title {
+  .contacts__form-label {
     font-size: 12px;
   }
   .contacts__form-input,
@@ -870,7 +874,7 @@ body.lock {
   .contacts__form-title {
     font-size: 14px;
   }
-  .contacts__form-input--title {
+  .contacts__form-labele {
     font-size: 12px;
   }
   .contacts__form-input,
