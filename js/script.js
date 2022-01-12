@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {
-  jQuery(".contacts__form-btn").click(function () {
+  jQuery("contacts__form-btn").click(function () {
     var form = jQuery(this).closest("form");
 
     if (form.valid()) {
