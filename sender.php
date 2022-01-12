@@ -3,7 +3,7 @@
     $email = $_POST['email'];
     $text = $_POST['text'];
 
-	$to = "sergeibogko85a@gmail.com"; 
+	$to = "sergeibogko85@gmail.com"; 
 	$date = date ("d.m.Y"); 
 	$time = date ("h:i");
 	$from = $email;
@@ -14,7 +14,7 @@
     Имя: $name /n
     Почта: $email /n
     Текст: $text"; 	
-	mail($to, $subject, $msg, "From: $from ");
+	mail($to, $subject, $msg, "From: $to ");
 
 ?>
 
