@@ -12,9 +12,9 @@ jQuery(document).ready(function () {
         dataType: "html",
         data: form.serialize(),
         success: function (data) {
-          form.html(data);
-          form.css("opacity", "1");
-          //form.find('.status').html('форма отправлена успешно');
+          //   form.html(data);
+          //   form.css("opacity", "1");
+          form.find(".status").html("форма отправлена успешно");
           //$('#myModal').modal('show') // для бутстрапа
         },
         error: function () {
