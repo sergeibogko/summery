@@ -66,20 +66,28 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-function call() {
-  var msg = $("#formx").serialize();
-  $.ajax({
-    type: "POST",
-    url: "sender.php", //обращаемся к обработчику
-    data: msg,
-    success: function (data) {
-      //в случае успеха выводим результаты в div "results"
-      $("#formx").remove(); //скрываем форму после отправки
-      $("#results").html(data); //показываем сообщение об успехе вместо неё
-    },
-    error: function (xhr, str) {
-      //ошибка выводит соответствующее сообщение
-      alert("Возникла ошибка: " + xhr.responseCode);
-    },
+jQuery(document).ready(function () {
+  jQuery(".contacts__form-btn").click(function () {
+    var form = jQuery(this).closest("form");
+
+    if (form.valid()) {
+      form.css("opacity", ".5");
+      var actUrl = form.attr("action");
+      jQuery.ajax({
+        url: actUrl,
+        type: "post",
+        dataType: "html",
+        data: form.serialize(),
+        success: function (data) {
+          form.html(data);
+          form.css("opacity", "1");
+          // form.find(".status").html("форма отправлена успешно");
+          //$('#myModal').modal('show') // для бутстрапа
+        },
+        error: function () {
+          form.find(".status").html("серверная ошибка");
+        },
+      });
+    }
   });
-}
+});
