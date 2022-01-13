@@ -231,14 +231,14 @@
                 <h4 class="contacts__form-title">Так же Вы можете написать свое сообщения прямо здесь! <br>
                   Вам необходио заполнить все поля!
                 </h4>
-                <form class="contacts__form" action="sender.php" method="post">
-                  <label class="contacts__form-label">Ваше имя</label> 
-                  <input class="contacts__form-input" placeholder="Ваше имя" type="text" name="name" required>
-                  <label class="contacts__form-label">Ваш e-mail</label>
-                  <input class="contacts__form-input" placeholder="Ваш e-mail" type="email" name="email" required>
-                  <label class="contacts__form-label">Ваше сообщение</label>
-                  <textarea class="contacts__form-area" placeholder="Ваше сообщение" name="text" ></textarea>
-                  <button class="contacts__form-btn" type="button">Send</button>
+                <form id="formx" class="contacts__form" action="sender.php" method="post">
+                  <label for="name" class="contacts__form-label">Ваше имя</label> 
+                  <input id="name" class="contacts__form-input" placeholder="Ваше имя" type="text" name="name" required>
+                  <label for="email" class="contacts__form-label">Ваш e-mail</label>
+                  <input id="email" class="contacts__form-input" placeholder="Ваш e-mail" type="email" name="email" required>
+                  <label for="form_message" class="contacts__form-label">Ваше сообщение</label>
+                  <textarea id="form_message" class="contacts__form-area" placeholder="Ваше сообщение" name="text" ></textarea>
+                  <button class="contacts__form-btn" type="submit">Send</button>
                   <div class="status"></div>
                 </form>
               </div>
